@@ -12,7 +12,7 @@ class MenuUtama extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(' Faizal Isman ')),
+      appBar: AppBar(title: Text('Menu Utama - Faizal Isman')),
       body: ListView(
         padding: EdgeInsets.all(16),
         children: [
@@ -50,7 +50,7 @@ class PraktikInteraktif extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(' Interaktif ')),
+      appBar: AppBar(title: Text('Interaktif - Faizal Isman')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -127,7 +127,7 @@ class PraktikTabBar extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(' TabBar '),
+          title: Text('TabBar - Faizal Isman'),
           bottom: TabBar(
             tabs: [
               Tab(icon: Icon(Icons.directions_car), text: 'Car'),
@@ -155,15 +155,16 @@ class PraktikBottomNav extends StatefulWidget {
   const PraktikBottomNav({super.key});
 
   @override
-  State<PraktikBottomNav> createState() => _PraktikBottomNavState();}
+  State<PraktikBottomNav> createState() => _PraktikBottomNavState();
+}
 
-  class _PraktikBottomNavState extends State<PraktikBottomNav> {  
+class _PraktikBottomNavState extends State<PraktikBottomNav> {  
   int _currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(' Bottom Nav ')),
+      appBar: AppBar(title: Text('Bottom Nav - Faizal Isman')),
       body: Center(
         child: Text('Selected index: $_currentIndex', style: TextStyle(fontSize: 20)),
       ),
@@ -193,7 +194,7 @@ class PraktikDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(' Drawer ')),
+      appBar: AppBar(title: Text('Drawer - Faizal Isman')),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
